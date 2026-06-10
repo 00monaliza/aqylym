@@ -97,19 +97,56 @@ var io = new IntersectionObserver(function(entries){
 }, {threshold:.15});
 document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
 
-/* Steps light-up */
-var sio = new IntersectionObserver(function(entries){
-  entries.forEach(function(en){
-    if(en.isIntersecting){
-      document.querySelectorAll("#steps .step").forEach(function(s, i){
-        setTimeout(function(){ s.classList.add("lit"); }, i * 280);
-      });
-      sio.disconnect();
+/* Steps — infinite cycling light-up */
+(function(){
+  var stepsEl = document.getElementById("steps");
+  if(!stepsEl) return;
+  var stepEls = stepsEl.querySelectorAll(".step");
+  var stepsInterval = null;
+  var stepsTimeout = null;
+  var stepIdx = 0;
+  var running = false;
+
+  function tick(){
+    if(stepIdx === 0){
+      stepEls.forEach(function(s){ s.classList.remove("lit"); });
     }
-  });
-}, {threshold:.4});
-var stepsEl = document.getElementById("steps");
-if(stepsEl) sio.observe(stepsEl);
+    if(stepIdx < stepEls.length){
+      stepEls[stepIdx].classList.add("lit");
+      stepIdx++;
+    }
+    if(stepIdx >= stepEls.length){
+      clearInterval(stepsInterval);
+      stepsTimeout = setTimeout(function(){
+        stepIdx = 0;
+        stepsInterval = setInterval(tick, 380);
+      }, 2200);
+    }
+  }
+
+  function startSteps(){
+    if(running) return;
+    running = true;
+    stepIdx = 0;
+    stepEls.forEach(function(s){ s.classList.remove("lit"); });
+    stepsInterval = setInterval(tick, 380);
+  }
+
+  function stopSteps(){
+    running = false;
+    clearInterval(stepsInterval);
+    clearTimeout(stepsTimeout);
+  }
+
+  var sio = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting) startSteps();
+      else stopSteps();
+    });
+  }, {threshold:.3});
+
+  sio.observe(stepsEl);
+})();
 
 /* Deadline countdown */
 (function(){
