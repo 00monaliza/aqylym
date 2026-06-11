@@ -1,378 +1,572 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aqylym — поступление в университеты Европы и США из Казахстана</title>
-<meta name="description" content="Помогаем школьникам, выпускникам и магистрантам из Казахстана поступить в университеты Европы и США. Стратегия, документы, гранты. Гарантия результата по договору.">
-<meta property="og:title" content="Aqylym — ваш маршрут в университеты Европы и США">
-<meta property="og:description" content="Сопровождение от стратегии до зачисления. Гарантия по договору.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://aqylym.kz">
-<meta property="og:locale" content="ru_KZ">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231A2B5E'/%3E%3Cpath d='M16 4 L23 16 L16 28 L9 16 Z' fill='%23F5C400'/%3E%3Cpath d='M16 4 L23 16 L16 16 Z' fill='%23fff' opacity='.35'/%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%231A2B5E'/%3E%3Cpath d='M90 22 L130 90 L90 158 L50 90 Z' fill='%23F5C400'/%3E%3Cpath d='M90 22 L130 90 L90 90 Z' fill='%23fff' opacity='.35'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aqylym — поступление в университеты Европы и США из Казахстана</title>
+  <meta name="description"
+    content="Помогаем школьникам, выпускникам и магистрантам из Казахстана поступить в университеты Европы и США. Стратегия, документы, гранты. Гарантия результата по договору.">
+  <meta property="og:title" content="Aqylym — ваш маршрут в университеты Европы и США">
+  <meta property="og:description" content="Сопровождение от стратегии до зачисления. Гарантия по договору.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aqylym.kz">
+  <meta property="og:locale" content="ru_KZ">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231A2B5E'/%3E%3Cpath d='M16 4 L23 16 L16 28 L9 16 Z' fill='%23F5C400'/%3E%3Cpath d='M16 4 L23 16 L16 16 Z' fill='%23fff' opacity='.35'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%231A2B5E'/%3E%3Cpath d='M90 22 L130 90 L90 158 L50 90 Z' fill='%23F5C400'/%3E%3Cpath d='M90 22 L130 90 L90 90 Z' fill='%23fff' opacity='.35'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Unbounded:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- NAV -->
-<header class="nav" id="nav">
-  <div class="wrap">
-    <a class="logo-link" href="#top" aria-label="Aqylym — на главную">
-      <img src="aqylym_logo.png" alt="Aqylym" class="logo-img">
-      <span class="logo-text">a<svg class="logo-needle" viewBox="0 0 16 26" aria-hidden="true"><path d="M8 0 L16 13 L8 26 L0 13 Z" fill="#F5C400"/><path d="M8 0 L16 13 L8 13 Z" fill="#fff" opacity=".45"/></svg>ylym</span>
-    </a>
-    <nav class="nav-links" id="navLinks">
-      <a href="#aud">Кому помогаем</a>
-      <a href="#services">Услуги</a>
-      <a href="#guarantee">Гарантия</a>
-      <a href="#process">Как работаем</a>
-      <a href="#reviews">Отзывы</a>
-    </nav>
-    <a class="btn btn-gold" href="#contact" data-goal="cta_nav">Консультация</a>
-    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero" id="top">
-  <svg class="hero-route" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <path d="M -40 620 C 260 560, 420 470, 640 480 S 1040 360, 1210 240 S 1380 120, 1460 70" fill="none" stroke="#F5C400" stroke-width="2.5" stroke-dasharray="9 9" opacity=".5"/>
-    <circle cx="300" cy="544" r="6" fill="#F5C400"/>
-    <circle cx="700" cy="470" r="6" fill="#F5C400" opacity=".7"/>
-    <circle cx="1120" cy="300" r="6" fill="#F5C400" opacity=".45"/>
-    <g transform="translate(1285,175) rotate(38)">
-      <path d="M0 -34 L9 0 L0 34 L-9 0 Z" fill="#F5C400"/>
-      <path d="M0 -34 L9 0 L0 0 Z" fill="#fff" opacity=".6"/>
-    </g>
-  </svg>
-  <svg class="hero-orn orn-spin" viewBox="0 0 120 120" aria-hidden="true">
-    <path d="M60 10 C 90 10, 110 30, 110 60 C 110 78, 98 88, 84 88 C 72 88, 64 80, 64 70 C 64 62, 70 56, 78 56 C 84 56, 88 60, 88 65" fill="none" stroke="#F5C400" stroke-width="5" stroke-linecap="round"/>
-    <path d="M60 10 C 30 10, 10 30, 10 60 C 10 78, 22 88, 36 88 C 48 88, 56 80, 56 70 C 56 62, 50 56, 42 56 C 36 56, 32 60, 32 65" fill="none" stroke="#F5C400" stroke-width="5" stroke-linecap="round"/>
-  </svg>
-  <div class="wrap">
-    <div>
-      <h1>Поступление в университеты <em>Европы и США</em> — по чёткому маршруту</h1>
-      <p class="lead">Стратегия, документы, гранты и подача заявок — ведём от первого шага до зачисления.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-gold" href="#contact" data-goal="cta_hero">Записаться на бесплатную консультацию</a>
-        <a class="btn btn-ghost wa-link" href="#" data-goal="whatsapp_hero">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4 0-.5.1-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.8a11.6 11.6 0 0 0 4.5 4.3c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0 0-.2-.1-.3-.1Z"/></svg>
-          Написать в WhatsApp
-        </a>
-      </div>
-      <div class="deadline-chip" id="deadlineChip" hidden>
-        <span>До ближайшего дедлайна (<span id="dlName"></span>):</span>
-        <b id="dlDays">—</b><span>дней</span>
-      </div>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a class="logo-link" href="#top" aria-label="Aqylym — на главную">
+        <img src="./aqylym_logo.png" alt="Aqylym" class="logo-img">
+        <span class="logo-text">a<svg class="logo-needle" viewBox="0 0 16 26" aria-hidden="true">
+            <path d="M8 0 L16 13 L8 26 L0 13 Z" fill="#F5C400" />
+            <path d="M8 0 L16 13 L8 13 Z" fill="#fff" opacity=".45" />
+          </svg>ylym</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#aud">Кому помогаем</a>
+        <a href="#services">Услуги</a>
+        <a href="#guarantee">Гарантия</a>
+        <a href="#process">Как работаем</a>
+        <a href="#reviews">Отзывы</a>
+      </nav>
+      <a class="btn btn-gold" href="#contact" data-goal="cta_nav">Консультация</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
     </div>
-    <aside class="hero-card rv">
-      <h3>Что вы получите на консультации</h3>
-      <ul>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Честную оценку шансов по текущему профилю</li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>2–3 страны и формата под ваш бюджет</li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Календарь дедлайнов на ближайший год</li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>План первых шагов — даже если поступать через 2 года</li>
-      </ul>
-    </aside>
-  </div>
-</section>
+  </header>
 
-<!-- STATS TICKER -->
-<div class="stats-ticker" aria-label="Наши результаты">
-  <div class="stats-track">
-    <div class="si"><b>200+</b><span>студентов поступили за рубеж</span></div>
-    <span class="si-dot" aria-hidden="true">◆</span>
-    <div class="si"><b>6 лет</b><span>помогаем поступающим</span></div>
-    <span class="si-dot" aria-hidden="true">◆</span>
-    <div class="si"><b>100%</b><span>сопровождение от А до Я</span></div>
-    <span class="si-dot" aria-hidden="true">◆</span>
-    <div class="si"><b>5 офферов</b><span>в среднем получает каждый студент</span></div>
-    <span class="si-dot" aria-hidden="true">◆</span>
-    <!-- duplicate for seamless loop -->
-    <div class="si"><b>200+</b><span>студентов поступили за рубеж</span></div>
-    <span class="si-dot" aria-hidden="true">◆</span>
-    <div class="si"><b>6 лет</b><span>помогаем поступающим</span></div>
-    <span class="si-dot" aria-hidden="true">◆</span>
-    <div class="si"><b>100%</b><span>сопровождение от А до Я</span></div>
-    <span class="si-dot" aria-hidden="true">◆</span>
-    <div class="si"><b>5 офферов</b><span>в среднем получает каждый студент</span></div>
-    <span class="si-dot" aria-hidden="true">◆</span>
-  </div>
-</div>
-
-<!-- AUDIENCE -->
-<section id="aud" class="has-orn">
-  <!-- ornament 1: qoshqar-muiz, navy, rotating -->
-  <svg class="sec-orn orn-a orn-spin-slow" viewBox="0 0 120 120" aria-hidden="true">
-    <path d="M60 10 C 90 10, 110 30, 110 60 C 110 78, 98 88, 84 88 C 72 88, 64 80, 64 70 C 64 62, 70 56, 78 56 C 84 56, 88 60, 88 65" fill="none" stroke="#1A2B5E" stroke-width="5" stroke-linecap="round"/>
-    <path d="M60 10 C 30 10, 10 30, 10 60 C 10 78, 22 88, 36 88 C 48 88, 56 80, 56 70 C 56 62, 50 56, 42 56 C 36 56, 32 60, 32 65" fill="none" stroke="#1A2B5E" stroke-width="5" stroke-linecap="round"/>
-  </svg>
-  <div class="wrap">
-    <span class="kicker">Кому помогаем</span>
-    <h2 class="sec">Три маршрута — одна цель: зачисление</h2>
-    <div class="aud-grid">
-      <article class="aud rv">
-        <span class="tag">10–11 класс</span>
-        <h3>Школьникам и родителям</h3>
-        <ul>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Ранняя стратегия: язык, портфолио, олимпиады</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Подбор стран под профиль ребёнка</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Поступление сразу после школы</li>
-        </ul>
-        <a href="#contact" data-seg="school" data-goal="aud_school">Составить план →</a>
-      </article>
-      <article class="aud rv d1">
-        <span class="tag">Бакалавриат</span>
-        <h3>Выпускникам школ</h3>
-        <ul>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Подача в вузы Европы и США в текущем цикле</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Мотивационное письмо, рекомендации, резюме</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Гранты и программы Foundation</li>
-        </ul>
-        <a href="#contact" data-seg="bachelor" data-goal="aud_bachelor">Успеть в этот набор →</a>
-      </article>
-      <article class="aud rv d2">
-        <span class="tag">Магистратура</span>
-        <h3>Студентам и специалистам</h3>
-        <ul>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Master's в Европе и США с полным грантом</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Erasmus+, DAAD, Fulbright — что подходит вам</li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Research proposal и переписка с профессорами</li>
-        </ul>
-        <a href="#contact" data-seg="master" data-goal="aud_master">Подобрать программу →</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" style="padding-top:0">
-  <div class="wrap">
-    <span class="kicker">Что входит в сопровождение</span>
-    <h2 class="sec">Берём на себя весь маршрут</h2>
-    <div class="svc-wrap">
-      <div class="svc-list">
-        <div class="svc rv"><div class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A2B5E" stroke-width="3.4" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg></div><div><h3>Подбор университетов и программ</h3><p>Под профиль, бюджет и цели — а не «куда проще подать».</p></div></div>
-        <div class="svc rv"><div class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A2B5E" stroke-width="3.4" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg></div><div><h3>Индивидуальная стратегия поступления</h3><p>Пошаговый план с датами: экзамены, документы, подачи.</p></div></div>
-        <div class="svc rv"><div class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A2B5E" stroke-width="3.4" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg></div><div><h3>Мотивационное письмо, рекомендации, резюме</h3><p>Редактируем до состояния, за которое не стыдно перед Оксфордом.</p></div></div>
-        <div class="svc rv"><div class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A2B5E" stroke-width="3.4" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg></div><div><h3>Подача заявок в университеты</h3><p>Common App, UCAS, uni-assist и прямые подачи — без ошибок.</p></div></div>
-        <div class="svc rv"><div class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A2B5E" stroke-width="3.4" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg></div><div><h3>Гранты и стипендии</h3><p>Находим финансирование: от скидок вуза до полных грантов.</p></div></div>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <svg class="hero-route" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path d="M -40 620 C 260 560, 420 470, 640 480 S 1040 360, 1210 240 S 1380 120, 1460 70" fill="none"
+        stroke="#F5C400" stroke-width="2.5" stroke-dasharray="9 9" opacity=".5" />
+      <circle cx="300" cy="544" r="6" fill="#F5C400" />
+      <circle cx="700" cy="470" r="6" fill="#F5C400" opacity=".7" />
+      <circle cx="1120" cy="300" r="6" fill="#F5C400" opacity=".45" />
+      <g transform="translate(1285,175) rotate(38)">
+        <path d="M0 -34 L9 0 L0 34 L-9 0 Z" fill="#F5C400" />
+        <path d="M0 -34 L9 0 L0 0 Z" fill="#fff" opacity=".6" />
+      </g>
+    </svg>
+    <svg class="hero-orn orn-spin" viewBox="0 0 120 120" aria-hidden="true">
+      <path
+        d="M60 10 C 90 10, 110 30, 110 60 C 110 78, 98 88, 84 88 C 72 88, 64 80, 64 70 C 64 62, 70 56, 78 56 C 84 56, 88 60, 88 65"
+        fill="none" stroke="#F5C400" stroke-width="5" stroke-linecap="round" />
+      <path
+        d="M60 10 C 30 10, 10 30, 10 60 C 10 78, 22 88, 36 88 C 48 88, 56 80, 56 70 C 56 62, 50 56, 42 56 C 36 56, 32 60, 32 65"
+        fill="none" stroke="#F5C400" stroke-width="5" stroke-linecap="round" />
+    </svg>
+    <div class="wrap">
+      <div>
+        <h1>Поступление в университеты <em>Европы и США</em> — по чёткому маршруту</h1>
+        <p class="lead">Стратегия, документы, гранты и подача заявок — ведём от первого шага до зачисления.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-gold" href="#contact" data-goal="cta_hero">Записаться на бесплатную консультацию</a>
+          <a class="btn btn-ghost wa-link" href="#" data-goal="whatsapp_hero">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4 0-.5.1-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.8a11.6 11.6 0 0 0 4.5 4.3c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0 0-.2-.1-.3-.1Z" />
+            </svg>
+            Написать в WhatsApp
+          </a>
+        </div>
+        <div class="deadline-chip" id="deadlineChip" hidden>
+          <span>До ближайшего дедлайна (<span id="dlName"></span>):</span>
+          <b id="dlDays">—</b><span>дней</span>
+        </div>
       </div>
-      <aside class="svc-aside rv d1">
-        <svg class="svc-orn orn-spin-slow" viewBox="0 0 120 120" aria-hidden="true">
-          <path d="M60 10 C 90 10, 110 30, 110 60 C 110 78, 98 88, 84 88 C 72 88, 64 80, 64 70 C 64 62, 70 56, 78 56 C 84 56, 88 60, 88 65" fill="none" stroke="#F5C400" stroke-width="6" stroke-linecap="round"/>
-          <path d="M60 10 C 30 10, 10 30, 10 60 C 10 78, 22 88, 36 88 C 48 88, 56 80, 56 70 C 56 62, 50 56, 42 56 C 36 56, 32 60, 32 65" fill="none" stroke="#F5C400" stroke-width="6" stroke-linecap="round"/>
-        </svg>
-        <span class="kicker">Бір қадамнан басталады</span>
-        <h3>Не знаете, с чего начать? Это нормально.</h3>
-        <p>Первая консультация бесплатна: разберём вашу ситуацию, честно скажем шансы и что усилить. Без обязательств.</p>
-        <a class="btn btn-gold" href="#contact" data-goal="cta_services">Получить разбор профиля</a>
+      <aside class="hero-card rv">
+        <h3>Что вы получите на консультации</h3>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="3"
+              aria-hidden="true">
+              <path d="M4 12.5 10 18 20 6" />
+            </svg>Честную оценку шансов по текущему профилю</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="3"
+              aria-hidden="true">
+              <path d="M4 12.5 10 18 20 6" />
+            </svg>2–3 страны и формата под ваш бюджет</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="3"
+              aria-hidden="true">
+              <path d="M4 12.5 10 18 20 6" />
+            </svg>Календарь дедлайнов на ближайший год</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="3"
+              aria-hidden="true">
+              <path d="M4 12.5 10 18 20 6" />
+            </svg>План первых шагов — даже если поступать через 2 года</li>
+        </ul>
       </aside>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- HERITAGE -->
-<section class="heritage on-navy" id="heritage">
-  <div class="wrap" style="text-align:center">
-    <span class="kicker" style="justify-content:center">Білім жолы</span>
-    <p class="her-quote">«Кел, балалар, оқылық!»</p>
-    <p class="her-quote-src">Ыбырай Алтынсарин — призыв, с которого началось современное образование Казахстана</p>
-    <p class="sec-sub" style="margin:18px auto 0;max-width:700px">Стремление к знаниям — часть нашей истории. Великие просветители прошли путь за образованием первыми. <b style="color:#fff">Aqylym</b> продолжает этот путь — теперь он ведёт в лучшие университеты мира.</p>
+  <!-- STATS TICKER -->
+  <div class="stats-ticker" aria-label="Наши результаты">
+    <div class="stats-track">
+      <div class="si"><b>200+</b><span>студентов поступили за рубеж</span></div>
+      <span class="si-dot" aria-hidden="true">◆</span>
+      <div class="si"><b>6 лет</b><span>помогаем поступающим</span></div>
+      <span class="si-dot" aria-hidden="true">◆</span>
+      <div class="si"><b>100%</b><span>сопровождение от А до Я</span></div>
+      <span class="si-dot" aria-hidden="true">◆</span>
+      <div class="si"><b>5 офферов</b><span>в среднем получает каждый студент</span></div>
+      <span class="si-dot" aria-hidden="true">◆</span>
+      <!-- duplicate for seamless loop -->
+      <div class="si"><b>200+</b><span>студентов поступили за рубеж</span></div>
+      <span class="si-dot" aria-hidden="true">◆</span>
+      <div class="si"><b>6 лет</b><span>помогаем поступающим</span></div>
+      <span class="si-dot" aria-hidden="true">◆</span>
+      <div class="si"><b>100%</b><span>сопровождение от А до Я</span></div>
+      <span class="si-dot" aria-hidden="true">◆</span>
+      <div class="si"><b>5 офферов</b><span>в среднем получает каждый студент</span></div>
+      <span class="si-dot" aria-hidden="true">◆</span>
+    </div>
   </div>
-</section>
 
-<!-- GUARANTEE -->
-<section id="guarantee" class="has-orn">
-  <!-- ornament 2: shanyrak wheel, gold, floating -->
-  <svg class="sec-orn orn-b orn-float" viewBox="0 0 120 120" aria-hidden="true">
-    <circle cx="60" cy="60" r="50" fill="none" stroke="#C79E00" stroke-width="4"/>
-    <circle cx="60" cy="60" r="28" fill="none" stroke="#C79E00" stroke-width="3"/>
-    <circle cx="60" cy="60" r="8" fill="#C79E00"/>
-    <line x1="60" y1="10" x2="60" y2="32" stroke="#C79E00" stroke-width="3" stroke-linecap="round"/>
-    <line x1="60" y1="88" x2="60" y2="110" stroke="#C79E00" stroke-width="3" stroke-linecap="round"/>
-    <line x1="10" y1="60" x2="32" y2="60" stroke="#C79E00" stroke-width="3" stroke-linecap="round"/>
-    <line x1="88" y1="60" x2="110" y2="60" stroke="#C79E00" stroke-width="3" stroke-linecap="round"/>
-    <line x1="25" y1="25" x2="40" y2="40" stroke="#C79E00" stroke-width="3" stroke-linecap="round"/>
-    <line x1="80" y1="80" x2="95" y2="95" stroke="#C79E00" stroke-width="3" stroke-linecap="round"/>
-    <line x1="95" y1="25" x2="80" y2="40" stroke="#C79E00" stroke-width="3" stroke-linecap="round"/>
-    <line x1="25" y1="95" x2="40" y2="80" stroke="#C79E00" stroke-width="3" stroke-linecap="round"/>
-  </svg>
-  <div class="wrap">
-    <span class="kicker">Гарантия по договору</span>
-    <h2 class="sec">Уверены в результате — закрепляем письменно</h2>
-    <div class="guar-grid">
-      <div class="guar rv">
-        <div class="shield"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2" aria-hidden="true"><path d="M12 2.5 20 5.5V11c0 5.2-3.4 8.9-8 10.5C7.4 19.9 4 16.2 4 11V5.5Z"/><path d="M8.5 12l2.4 2.4L15.6 9.7"/></svg></div>
-        <div><h3>Не поступили с первой попытки?</h3><p>Проводим повторный цикл подачи бесплатно: пересматриваем стратегию и подаём снова.</p></div>
+  <!-- AUDIENCE -->
+  <section id="aud" class="has-orn">
+    <!-- ornament 1: qoshqar-muiz, navy, rotating -->
+    <svg class="sec-orn orn-a orn-spin-slow" viewBox="0 0 120 120" aria-hidden="true">
+      <path
+        d="M60 10 C 90 10, 110 30, 110 60 C 110 78, 98 88, 84 88 C 72 88, 64 80, 64 70 C 64 62, 70 56, 78 56 C 84 56, 88 60, 88 65"
+        fill="none" stroke="#1A2B5E" stroke-width="5" stroke-linecap="round" />
+      <path
+        d="M60 10 C 30 10, 10 30, 10 60 C 10 78, 22 88, 36 88 C 48 88, 56 80, 56 70 C 56 62, 50 56, 42 56 C 36 56, 32 60, 32 65"
+        fill="none" stroke="#1A2B5E" stroke-width="5" stroke-linecap="round" />
+    </svg>
+    <div class="wrap">
+      <span class="kicker">Кому помогаем</span>
+      <h2 class="sec">Три маршрута — одна цель: зачисление</h2>
+      <div class="aud-grid">
+        <article class="aud rv">
+          <span class="tag">10–11 класс</span>
+          <h3>Школьникам и родителям</h3>
+          <ul>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3"
+                aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg>Ранняя стратегия: язык, портфолио, олимпиады</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3"
+                aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg>Подбор стран под профиль ребёнка</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3"
+                aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg>Поступление сразу после школы</li>
+          </ul>
+          <a href="#contact" data-seg="school" data-goal="aud_school">Составить план →</a>
+        </article>
+        <article class="aud rv d1">
+          <span class="tag">Бакалавриат</span>
+          <h3>Выпускникам школ</h3>
+          <ul>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3"
+                aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg>Подача в вузы Европы и США в текущем цикле</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3"
+                aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg>Мотивационное письмо, рекомендации, резюме</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3"
+                aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg>Гранты и программы Foundation</li>
+          </ul>
+          <a href="#contact" data-seg="bachelor" data-goal="aud_bachelor">Успеть в этот набор →</a>
+        </article>
+        <article class="aud rv d2">
+          <span class="tag">Магистратура</span>
+          <h3>Студентам и специалистам</h3>
+          <ul>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3"
+                aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg>Master's в Европе и США с полным грантом</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3"
+                aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg>Erasmus+, DAAD, Fulbright — что подходит вам</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C79E00" stroke-width="3"
+                aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg>Research proposal и переписка с профессорами</li>
+          </ul>
+          <a href="#contact" data-seg="master" data-goal="aud_master">Подобрать программу →</a>
+        </article>
       </div>
-      <div class="guar rv d1">
-        <div class="shield"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2" aria-hidden="true"><path d="M12 2.5 20 5.5V11c0 5.2-3.4 8.9-8 10.5C7.4 19.9 4 16.2 4 11V5.5Z"/><path d="M9 9.5c0-1.1 1.2-2 3-2s3 .9 3 2-1.2 1.6-3 2-3 .9-3 2 1.2 2 3 2 3-.9 3-2M12 6v1.5M12 16.5V18"/></svg></div>
-        <div><h3>Не поступили и со второй?</h3><p>Возвращаем оплату согласно договору. Финансовый риск — на нас, не на вашей семье.</p></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" style="padding-top:0">
+    <div class="wrap">
+      <span class="kicker">Что входит в сопровождение</span>
+      <h2 class="sec">Берём на себя весь маршрут</h2>
+      <div class="svc-wrap">
+        <div class="svc-list">
+          <div class="svc rv">
+            <div class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A2B5E"
+                stroke-width="3.4" aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg></div>
+            <div>
+              <h3>Подбор университетов и программ</h3>
+              <p>Под профиль, бюджет и цели — а не «куда проще подать».</p>
+            </div>
+          </div>
+          <div class="svc rv">
+            <div class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A2B5E"
+                stroke-width="3.4" aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg></div>
+            <div>
+              <h3>Индивидуальная стратегия поступления</h3>
+              <p>Пошаговый план с датами: экзамены, документы, подачи.</p>
+            </div>
+          </div>
+          <div class="svc rv">
+            <div class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A2B5E"
+                stroke-width="3.4" aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg></div>
+            <div>
+              <h3>Мотивационное письмо, рекомендации, резюме</h3>
+              <p>Редактируем до состояния, за которое не стыдно перед Оксфордом.</p>
+            </div>
+          </div>
+          <div class="svc rv">
+            <div class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A2B5E"
+                stroke-width="3.4" aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg></div>
+            <div>
+              <h3>Подача заявок в университеты</h3>
+              <p>Common App, UCAS, uni-assist и прямые подачи — без ошибок.</p>
+            </div>
+          </div>
+          <div class="svc rv">
+            <div class="chk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A2B5E"
+                stroke-width="3.4" aria-hidden="true">
+                <path d="M4 12.5 10 18 20 6" />
+              </svg></div>
+            <div>
+              <h3>Гранты и стипендии</h3>
+              <p>Находим финансирование: от скидок вуза до полных грантов.</p>
+            </div>
+          </div>
+        </div>
+        <aside class="svc-aside rv d1">
+          <svg class="svc-orn orn-spin-slow" viewBox="0 0 120 120" aria-hidden="true">
+            <path
+              d="M60 10 C 90 10, 110 30, 110 60 C 110 78, 98 88, 84 88 C 72 88, 64 80, 64 70 C 64 62, 70 56, 78 56 C 84 56, 88 60, 88 65"
+              fill="none" stroke="#F5C400" stroke-width="6" stroke-linecap="round" />
+            <path
+              d="M60 10 C 30 10, 10 30, 10 60 C 10 78, 22 88, 36 88 C 48 88, 56 80, 56 70 C 56 62, 50 56, 42 56 C 36 56, 32 60, 32 65"
+              fill="none" stroke="#F5C400" stroke-width="6" stroke-linecap="round" />
+          </svg>
+          <span class="kicker">Бір қадамнан басталады</span>
+          <h3>Не знаете, с чего начать? Это нормально.</h3>
+          <p>Первая консультация бесплатна: разберём вашу ситуацию, честно скажем шансы и что усилить. Без обязательств.
+          </p>
+          <a class="btn btn-gold" href="#contact" data-goal="cta_services">Получить разбор профиля</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERITAGE -->
+  <section class="heritage on-navy" id="heritage">
+    <div class="wrap" style="text-align:center">
+      <span class="kicker" style="justify-content:center">Білім жолы</span>
+      <p class="her-quote">«Кел, балалар, оқылық!»</p>
+      <p class="her-quote-src">Ыбырай Алтынсарин — призыв, с которого началось современное образование Казахстана</p>
+      <p class="sec-sub" style="margin:18px auto 0;max-width:700px">Стремление к знаниям — часть нашей истории. Великие
+        просветители прошли путь за образованием первыми. <b style="color:#fff">Aqylym</b> продолжает этот путь — теперь
+        он ведёт в лучшие университеты мира.</p>
+    </div>
+  </section>
+
+  <!-- GUARANTEE -->
+  <section id="guarantee" class="has-orn">
+    <!-- ornament 2: shanyrak wheel, gold, floating -->
+    <svg class="sec-orn orn-b orn-float" viewBox="0 0 120 120" aria-hidden="true">
+      <circle cx="60" cy="60" r="50" fill="none" stroke="#C79E00" stroke-width="4" />
+      <circle cx="60" cy="60" r="28" fill="none" stroke="#C79E00" stroke-width="3" />
+      <circle cx="60" cy="60" r="8" fill="#C79E00" />
+      <line x1="60" y1="10" x2="60" y2="32" stroke="#C79E00" stroke-width="3" stroke-linecap="round" />
+      <line x1="60" y1="88" x2="60" y2="110" stroke="#C79E00" stroke-width="3" stroke-linecap="round" />
+      <line x1="10" y1="60" x2="32" y2="60" stroke="#C79E00" stroke-width="3" stroke-linecap="round" />
+      <line x1="88" y1="60" x2="110" y2="60" stroke="#C79E00" stroke-width="3" stroke-linecap="round" />
+      <line x1="25" y1="25" x2="40" y2="40" stroke="#C79E00" stroke-width="3" stroke-linecap="round" />
+      <line x1="80" y1="80" x2="95" y2="95" stroke="#C79E00" stroke-width="3" stroke-linecap="round" />
+      <line x1="95" y1="25" x2="80" y2="40" stroke="#C79E00" stroke-width="3" stroke-linecap="round" />
+      <line x1="25" y1="95" x2="40" y2="80" stroke="#C79E00" stroke-width="3" stroke-linecap="round" />
+    </svg>
+    <div class="wrap">
+      <span class="kicker">Гарантия по договору</span>
+      <h2 class="sec">Уверены в результате — закрепляем письменно</h2>
+      <div class="guar-grid">
+        <div class="guar rv">
+          <div class="shield"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5C400"
+              stroke-width="2" aria-hidden="true">
+              <path d="M12 2.5 20 5.5V11c0 5.2-3.4 8.9-8 10.5C7.4 19.9 4 16.2 4 11V5.5Z" />
+              <path d="M8.5 12l2.4 2.4L15.6 9.7" />
+            </svg></div>
+          <div>
+            <h3>Не поступили с первой попытки?</h3>
+            <p>Проводим повторный цикл подачи бесплатно: пересматриваем стратегию и подаём снова.</p>
+          </div>
+        </div>
+        <div class="guar rv d1">
+          <div class="shield"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F5C400"
+              stroke-width="2" aria-hidden="true">
+              <path d="M12 2.5 20 5.5V11c0 5.2-3.4 8.9-8 10.5C7.4 19.9 4 16.2 4 11V5.5Z" />
+              <path d="M9 9.5c0-1.1 1.2-2 3-2s3 .9 3 2-1.2 1.6-3 2-3 .9-3 2 1.2 2 3 2 3-.9 3-2M12 6v1.5M12 16.5V18" />
+            </svg></div>
+          <div>
+            <h3>Не поступили и со второй?</h3>
+            <p>Возвращаем оплату согласно договору. Финансовый риск — на нас, не на вашей семье.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="on-navy" id="process" style="background:linear-gradient(180deg,var(--navy),var(--navy-deep))">
+    <div class="wrap">
+      <span class="kicker">Маршрут</span>
+      <h2 class="sec">Путь от заявки до студенческого билета</h2>
+      <div class="steps" id="steps">
+        <div class="step">
+          <div class="dot">01</div>
+          <h3>Бесплатная консультация</h3>
+          <p>Знакомимся, отвечаем на вопросы</p>
+        </div>
+        <div class="step">
+          <div class="dot">02</div>
+          <h3>Анализ профиля</h3>
+          <p>Оценки, язык, достижения, бюджет</p>
+        </div>
+        <div class="step">
+          <div class="dot">03</div>
+          <h3>Стратегия</h3>
+          <p>Страны, вузы, дедлайны</p>
+        </div>
+        <div class="step">
+          <div class="dot">04</div>
+          <h3>Документы</h3>
+          <p>Эссе, рекомендации, переводы</p>
+        </div>
+        <div class="step">
+          <div class="dot">05</div>
+          <h3>Подача заявок</h3>
+          <p>Все платформы — на нас</p>
+        </div>
+        <div class="step">
+          <div class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2" aria-hidden="true">
+              <path d="M2.5 9.5 12 5l9.5 4.5L12 14Z" />
+              <path d="M6.5 11.5V16c0 1.4 2.5 2.8 5.5 2.8s5.5-1.4 5.5-2.8v-4.5M21.5 9.5V15" />
+            </svg></div>
+          <h3>Зачисление</h3>
+          <p>Виза, жильё, переезд</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIVERSITIES -->
+  <div class="unis has-orn" style="position:relative">
+    <!-- ornament 3: törtkulak diamond chain, navy-soft, pulse -->
+    <svg class="sec-orn orn-c orn-pulse" viewBox="0 0 120 120" aria-hidden="true">
+      <path d="M60 10 L110 60 L60 110 L10 60 Z" fill="none" stroke="#24376E" stroke-width="4" />
+      <path d="M60 30 L90 60 L60 90 L30 60 Z" fill="none" stroke="#24376E" stroke-width="4" />
+      <path d="M60 48 L76 60 L60 72 L44 60 Z" fill="none" stroke="#24376E" stroke-width="3" />
+      <circle cx="60" cy="10" r="4" fill="#24376E" />
+      <circle cx="110" cy="60" r="4" fill="#24376E" />
+      <circle cx="60" cy="110" r="4" fill="#24376E" />
+      <circle cx="10" cy="60" r="4" fill="#24376E" />
+    </svg>
+    <div class="wrap">
+      <p class="lbl">Наши студенты учатся в университетах</p>
+      <div class="uni-row rv">
+        <span>TU München</span><span>Politecnico di Milano</span><span>University of Warsaw</span><span>Erasmus
+          Rotterdam</span><span>Arizona State University</span><span>Sapienza Roma</span><span>Charles
+          University</span><span>Coventry University</span>
       </div>
     </div>
   </div>
-</section>
 
-<!-- PROCESS -->
-<section class="on-navy" id="process" style="background:linear-gradient(180deg,var(--navy),var(--navy-deep))">
-  <div class="wrap">
-    <span class="kicker">Маршрут</span>
-    <h2 class="sec">Путь от заявки до студенческого билета</h2>
-    <div class="steps" id="steps">
-      <div class="step"><div class="dot">01</div><h3>Бесплатная консультация</h3><p>Знакомимся, отвечаем на вопросы</p></div>
-      <div class="step"><div class="dot">02</div><h3>Анализ профиля</h3><p>Оценки, язык, достижения, бюджет</p></div>
-      <div class="step"><div class="dot">03</div><h3>Стратегия</h3><p>Страны, вузы, дедлайны</p></div>
-      <div class="step"><div class="dot">04</div><h3>Документы</h3><p>Эссе, рекомендации, переводы</p></div>
-      <div class="step"><div class="dot">05</div><h3>Подача заявок</h3><p>Все платформы — на нас</p></div>
-      <div class="step"><div class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M2.5 9.5 12 5l9.5 4.5L12 14Z"/><path d="M6.5 11.5V16c0 1.4 2.5 2.8 5.5 2.8s5.5-1.4 5.5-2.8v-4.5M21.5 9.5V15"/></svg></div><h3>Зачисление</h3><p>Виза, жильё, переезд</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- UNIVERSITIES -->
-<div class="unis has-orn" style="position:relative">
-  <!-- ornament 3: törtkulak diamond chain, navy-soft, pulse -->
-  <svg class="sec-orn orn-c orn-pulse" viewBox="0 0 120 120" aria-hidden="true">
-    <path d="M60 10 L110 60 L60 110 L10 60 Z" fill="none" stroke="#24376E" stroke-width="4"/>
-    <path d="M60 30 L90 60 L60 90 L30 60 Z" fill="none" stroke="#24376E" stroke-width="4"/>
-    <path d="M60 48 L76 60 L60 72 L44 60 Z" fill="none" stroke="#24376E" stroke-width="3"/>
-    <circle cx="60" cy="10" r="4" fill="#24376E"/>
-    <circle cx="110" cy="60" r="4" fill="#24376E"/>
-    <circle cx="60" cy="110" r="4" fill="#24376E"/>
-    <circle cx="10" cy="60" r="4" fill="#24376E"/>
-  </svg>
-  <div class="wrap">
-    <p class="lbl">Наши студенты учатся в университетах</p>
-    <div class="uni-row rv">
-      <span>TU München</span><span>Politecnico di Milano</span><span>University of Warsaw</span><span>Erasmus Rotterdam</span><span>Arizona State University</span><span>Sapienza Roma</span><span>Charles University</span><span>Coventry University</span>
-    </div>
-  </div>
-</div>
-
-<!-- REVIEWS -->
-<section id="reviews" class="has-orn">
-  <!-- ornament 4: tumar amulet, deep gold, sway -->
-  <svg class="sec-orn orn-d orn-sway" viewBox="0 0 120 120" aria-hidden="true">
-    <path d="M60 8 L100 50 L60 112 L20 50 Z" fill="none" stroke="#F5C400" stroke-width="4" stroke-linejoin="round"/>
-    <path d="M60 24 L86 52 L60 96 L34 52 Z" fill="none" stroke="#F5C400" stroke-width="3" stroke-linejoin="round"/>
-    <path d="M60 40 L72 54 L60 80 L48 54 Z" fill="none" stroke="#F5C400" stroke-width="2.5" stroke-linejoin="round"/>
-    <circle cx="60" cy="8" r="5" fill="#F5C400"/>
-    <line x1="40" y1="50" x2="80" y2="50" stroke="#F5C400" stroke-width="2" stroke-linecap="round"/>
-  </svg>
-  <div class="wrap">
-    <span class="kicker">Истории поступивших</span>
-    <h2 class="sec">Что говорят студенты и родители</h2>
-    <div class="rev-grid">
-      <article class="rev rv">
-        <div class="stars" aria-label="5 из 5">★★★★★</div>
-        <p class="txt">«Начали в 10 классе — к выпускному у дочери были IELTS 7.5 и готовое портфолио. Поступила с грантом, покрывающим половину обучения.»</p>
-        <div class="who"><div class="ava">АС</div><div><b>Айгерим С., мама студентки</b><span>Бакалавриат · Германия</span></div></div>
-      </article>
-      <article class="rev rv d1">
-        <div class="stars" aria-label="5 из 5">★★★★★</div>
-        <p class="txt">«Думал, магистратура в Европе — это для "избранных". Мне подобрали программу с полным грантом и помогли с research proposal.»</p>
-        <div class="who"><div class="ava">ДТ</div><div><b>Дамир Т., магистрант</b><span>Магистратура · Нидерланды</span></div></div>
-      </article>
-      <article class="rev rv d2">
-        <div class="stars" aria-label="5 из 5">★★★★★</div>
-        <p class="txt">«Самое ценное — что не дали наделать ошибок в заявках и эссе. Подавался в 8 вузов, получил 5 офферов. Выбирал уже я, а не меня.»</p>
-        <div class="who"><div class="ava">ЕЖ</div><div><b>Ерасыл Ж., студент</b><span>Бакалавриат · США</span></div></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="final on-navy" id="contact">
-  <svg class="cta-orn orn-spin-slow" viewBox="0 0 120 120" aria-hidden="true">
-    <path d="M60 10 C 90 10, 110 30, 110 60 C 110 78, 98 88, 84 88 C 72 88, 64 80, 64 70 C 64 62, 70 56, 78 56 C 84 56, 88 60, 88 65" fill="none" stroke="#F5C400" stroke-width="6" stroke-linecap="round"/>
-    <path d="M60 10 C 30 10, 10 30, 10 60 C 10 78, 22 88, 36 88 C 48 88, 56 80, 56 70 C 56 62, 50 56, 42 56 C 36 56, 32 60, 32 65" fill="none" stroke="#F5C400" stroke-width="6" stroke-linecap="round"/>
-  </svg>
-  <div class="wrap">
-    <div>
-      <span class="kicker">Бесплатно · 30 минут · онлайн или в офисе</span>
-      <h2>Запишитесь на консультацию — разберём вашу ситуацию</h2>
-      <p class="lead">Оценим шансы, подберём страны и составим план поступления.</p>
-      <ul style="list-style:none;display:grid;gap:10px;color:#E8ECF7;font-size:15px">
-        <li style="display:flex;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="3" style="flex:none;margin-top:4px" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Отвечаем в WhatsApp в течение рабочего дня</li>
-        <li style="display:flex;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="3" style="flex:none;margin-top:4px" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Никакой рассылки и навязчивых звонков</li>
-      </ul>
-      <p class="alt">Удобнее написать самим? <a href="#" class="wa-link" data-goal="whatsapp_final">Откройте WhatsApp →</a></p>
-    </div>
-    <form class="form rv" id="leadForm" novalidate>
-      <h3>Бесплатная консультация</h3>
-      <p class="fs">Заявка откроется в WhatsApp — отправите одним нажатием.</p>
-      <div class="field" id="fName">
-        <label for="inName">Ваше имя</label>
-        <input id="inName" type="text" name="name" placeholder="Например, Айгерим" autocomplete="name">
-        <span class="err">Напишите, как к вам обращаться</span>
+  <!-- REVIEWS -->
+  <section id="reviews" class="has-orn">
+    <!-- ornament 4: tumar amulet, deep gold, sway -->
+    <svg class="sec-orn orn-d orn-sway" viewBox="0 0 120 120" aria-hidden="true">
+      <path d="M60 8 L100 50 L60 112 L20 50 Z" fill="none" stroke="#F5C400" stroke-width="4" stroke-linejoin="round" />
+      <path d="M60 24 L86 52 L60 96 L34 52 Z" fill="none" stroke="#F5C400" stroke-width="3" stroke-linejoin="round" />
+      <path d="M60 40 L72 54 L60 80 L48 54 Z" fill="none" stroke="#F5C400" stroke-width="2.5" stroke-linejoin="round" />
+      <circle cx="60" cy="8" r="5" fill="#F5C400" />
+      <line x1="40" y1="50" x2="80" y2="50" stroke="#F5C400" stroke-width="2" stroke-linecap="round" />
+    </svg>
+    <div class="wrap">
+      <span class="kicker">Истории поступивших</span>
+      <h2 class="sec">Что говорят студенты и родители</h2>
+      <div class="rev-grid">
+        <article class="rev rv">
+          <div class="stars" aria-label="5 из 5">★★★★★</div>
+          <p class="txt">«Начали в 10 классе — к выпускному у дочери были IELTS 7.5 и готовое портфолио. Поступила с
+            грантом, покрывающим половину обучения.»</p>
+          <div class="who">
+            <div class="ava">АС</div>
+            <div><b>Айгерим С., мама студентки</b><span>Бакалавриат · Германия</span></div>
+          </div>
+        </article>
+        <article class="rev rv d1">
+          <div class="stars" aria-label="5 из 5">★★★★★</div>
+          <p class="txt">«Думал, магистратура в Европе — это для "избранных". Мне подобрали программу с полным грантом и
+            помогли с research proposal.»</p>
+          <div class="who">
+            <div class="ava">ДТ</div>
+            <div><b>Дамир Т., магистрант</b><span>Магистратура · Нидерланды</span></div>
+          </div>
+        </article>
+        <article class="rev rv d2">
+          <div class="stars" aria-label="5 из 5">★★★★★</div>
+          <p class="txt">«Самое ценное — что не дали наделать ошибок в заявках и эссе. Подавался в 8 вузов, получил 5
+            офферов. Выбирал уже я, а не меня.»</p>
+          <div class="who">
+            <div class="ava">ЕЖ</div>
+            <div><b>Ерасыл Ж., студент</b><span>Бакалавриат · США</span></div>
+          </div>
+        </article>
       </div>
-      <div class="field" id="fPhone">
-        <label for="inPhone">Телефон (WhatsApp)</label>
-        <input id="inPhone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel">
-        <span class="err">Укажите номер в формате +7 7XX XXX XX XX</span>
-      </div>
-      <div class="field">
-        <label for="inSeg">Кто поступает</label>
-        <select id="inSeg" name="seg">
-          <option value="school">Школьник, 10–11 класс</option>
-          <option value="bachelor">Выпускник — на бакалавриат</option>
-          <option value="master">На магистратуру</option>
-          <option value="other">Другое / ещё думаем</option>
-        </select>
-      </div>
-      <button type="submit" class="btn btn-wa" data-goal="lead_form">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4 0-.5.1-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.8a11.6 11.6 0 0 0 4.5 4.3c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0 0-.2-.1-.3-.1Z"/></svg>
-        Получить консультацию бесплатно
-      </button>
-      <p class="priv">Нажимая кнопку, вы соглашаетесь с <a href="#" style="text-decoration:underline">политикой конфиденциальности</a></p>
-    </form>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div>
-      <a class="logo-link" href="#top" aria-label="Aqylym">
+  <!-- FINAL CTA -->
+  <section class="final on-navy" id="contact">
+    <svg class="cta-orn orn-spin-slow" viewBox="0 0 120 120" aria-hidden="true">
+      <path
+        d="M60 10 C 90 10, 110 30, 110 60 C 110 78, 98 88, 84 88 C 72 88, 64 80, 64 70 C 64 62, 70 56, 78 56 C 84 56, 88 60, 88 65"
+        fill="none" stroke="#F5C400" stroke-width="6" stroke-linecap="round" />
+      <path
+        d="M60 10 C 30 10, 10 30, 10 60 C 10 78, 22 88, 36 88 C 48 88, 56 80, 56 70 C 56 62, 50 56, 42 56 C 36 56, 32 60, 32 65"
+        fill="none" stroke="#F5C400" stroke-width="6" stroke-linecap="round" />
+    </svg>
+    <div class="wrap">
+      <div>
+        <span class="kicker">Бесплатно · 30 минут · онлайн или в офисе</span>
+        <h2>Запишитесь на консультацию — разберём вашу ситуацию</h2>
+        <p class="lead">Оценим шансы, подберём страны и составим план поступления.</p>
+        <ul style="list-style:none;display:grid;gap:10px;color:#E8ECF7;font-size:15px">
+          <li style="display:flex;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400"
+              stroke-width="3" style="flex:none;margin-top:4px" aria-hidden="true">
+              <path d="M4 12.5 10 18 20 6" />
+            </svg>Отвечаем в WhatsApp в течение рабочего дня</li>
+          <li style="display:flex;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5C400"
+              stroke-width="3" style="flex:none;margin-top:4px" aria-hidden="true">
+              <path d="M4 12.5 10 18 20 6" />
+            </svg>Никакой рассылки и навязчивых звонков</li>
+        </ul>
+        <p class="alt">Удобнее написать самим? <a href="#" class="wa-link" data-goal="whatsapp_final">Откройте WhatsApp
+            →</a></p>
+      </div>
+      <form class="form rv" id="leadForm" novalidate>
+        <h3>Бесплатная консультация</h3>
+        <p class="fs">Заявка откроется в WhatsApp — отправите одним нажатием.</p>
+        <div class="field" id="fName">
+          <label for="inName">Ваше имя</label>
+          <input id="inName" type="text" name="name" placeholder="Например, Айгерим" autocomplete="name">
+          <span class="err">Напишите, как к вам обращаться</span>
+        </div>
+        <div class="field" id="fPhone">
+          <label for="inPhone">Телефон (WhatsApp)</label>
+          <input id="inPhone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel"
+            inputmode="tel">
+          <span class="err">Укажите номер в формате +7 7XX XXX XX XX</span>
+        </div>
+        <div class="field">
+          <label for="inSeg">Кто поступает</label>
+          <select id="inSeg" name="seg">
+            <option value="school">Школьник, 10–11 класс</option>
+            <option value="bachelor">Выпускник — на бакалавриат</option>
+            <option value="master">На магистратуру</option>
+            <option value="other">Другое / ещё думаем</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-wa" data-goal="lead_form">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4 0-.5.1-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.8a11.6 11.6 0 0 0 4.5 4.3c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0 0-.2-.1-.3-.1Z" />
+          </svg>
+          Получить консультацию бесплатно
+        </button>
+        <p class="priv">Нажимая кнопку, вы соглашаетесь с <a href="#" style="text-decoration:underline">политикой
+            конфиденциальности</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div>
+        <!-- <a class="logo-link" href="#top" aria-label="Aqylym">
         <span class="logo-text logo-text-sm">a<svg class="logo-needle" viewBox="0 0 16 26" aria-hidden="true"><path d="M8 0 L16 13 L8 26 L0 13 Z" fill="#F5C400"/><path d="M8 0 L16 13 L8 13 Z" fill="#fff" opacity=".45"/></svg>ylym</span>
-      </a>
-      <p style="margin-top:14px;max-width:300px">Образовательное агентство. Поступление в университеты Европы и США из Казахстана: бакалавриат и магистратура.</p>
+      </a> -->
+        <a class="logo-link" href="#top" aria-label="Aqylym">
+          <img src="./aqylym_logo.png" alt="Aqylym" class="logo-img footer-logo">
+        </a>
+        <p style="margin-top:14px;max-width:300px">Образовательное агентство. Поступление в университеты Европы и США из
+          Казахстана: бакалавриат и магистратура.</p>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="#" class="wa-link" data-goal="whatsapp_footer">WhatsApp: +7 (705) 574-68-60</a>
+        <a href="https://www.instagram.com/aqylym_kz" target="_blank" rel="noopener" data-goal="instagram">Instagram:
+          @aqylym_kz</a>
+        <a href="mailto:info@aqylym.kz">info@aqylym.kz</a>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <a href="#aud">Кому помогаем</a>
+        <a href="#services">Услуги</a>
+        <a href="#guarantee">Гарантия</a>
+        <a href="#reviews">Отзывы</a>
+      </div>
     </div>
-    <div>
-      <h4>Контакты</h4>
-      <a href="#" class="wa-link" data-goal="whatsapp_footer">WhatsApp: +7 (705) 574-68-60</a>
-      <a href="https://www.instagram.com/aqylym_kz" target="_blank" rel="noopener" data-goal="instagram">Instagram: @aqylym_kz</a>
-      <a href="mailto:info@aqylym.kz">info@aqylym.kz</a>
+    <div class="wrap foot-bottom">
+      <span>© <span id="yr"></span> aqylym.kz — все права защищены</span>
+      <a href="#" style="display:inline">Политика конфиденциальности</a>
     </div>
-    <div>
-      <h4>Навигация</h4>
-      <a href="#aud">Кому помогаем</a>
-      <a href="#services">Услуги</a>
-      <a href="#guarantee">Гарантия</a>
-      <a href="#reviews">Отзывы</a>
-    </div>
-  </div>
-  <div class="wrap foot-bottom">
-    <span>© <span id="yr"></span> aqylym.kz — все права защищены</span>
-    <a href="#" style="display:inline">Политика конфиденциальности</a>
-  </div>
-</footer>
+  </footer>
 
-<!-- FLOATING WA -->
-<div class="fab" id="fab">
-  <div class="hint" id="fabHint">Остались вопросы? Ответим в WhatsApp за пару минут</div>
-  <a href="#" class="wa-link" data-goal="whatsapp_fab" aria-label="Написать в WhatsApp">
-    <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4 0-.5.1-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.8a11.6 11.6 0 0 0 4.5 4.3c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0 0-.2-.1-.3-.1Z"/></svg>
-  </a>
-</div>
+  <!-- FLOATING WA -->
+  <div class="fab" id="fab">
+    <div class="hint" id="fabHint">Остались вопросы? Ответим в WhatsApp за пару минут</div>
+    <a href="#" class="wa-link" data-goal="whatsapp_fab" aria-label="Написать в WhatsApp">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+        <path
+          d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4 0-.5.1-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.8a11.6 11.6 0 0 0 4.5 4.3c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0 0-.2-.1-.3-.1Z" />
+      </svg>
+    </a>
+  </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
