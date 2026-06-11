@@ -111,24 +111,12 @@ section {
   color: #fff
 }
 
-/* inline SVG logo */
 .logo-link {
   display: flex;
   align-items: center;
   flex-shrink: 0
 }
 
-/* .logo-text{
-  font-family:'Unbounded',
-  'Montserrat',sans-serif;
-  font-weight:700;
-  font-size:21px;
-  color:#fff;
-  display:flex;
-  align-items:center;
-  gap:2px;letter-spacing:-.01em;
-  line-height:1
-} */
 .logo-img {
   height: 48px;
   width: auto;
@@ -140,20 +128,8 @@ section {
   opacity: 1;
 }
 
-.logo-text-sm {
-  font-size: 18px
-}
-
-.logo-needle {
-  width: 13px;
-  height: 21px;
-  flex: none;
-  margin: 0 1px;
-  display: block
-}
-
-.footer-logo{
-  height:40px;
+.footer-logo {
+  height: 40px;
 }
 
 /* buttons */
