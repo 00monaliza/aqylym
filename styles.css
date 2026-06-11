@@ -13,9 +13,9 @@
   --wa: #25D366;
   --r: 18px;
   --r-sm: 12px;
-  --display: 'Unbounded', 'Montserrat', sans-serif;
-  --head: 'Montserrat', sans-serif;
-  --body: 'Inter', sans-serif;
+  --display: 'Geologica', sans-serif;
+  --head: 'Geologica', sans-serif;
+  --body: 'Noto Sans', sans-serif;
 }
 
 * {
@@ -472,6 +472,111 @@ section {
   height: 190px;
   bottom: -20px;
   right: -20px
+}
+
+/* additional sec-orn positions */
+.orn-e {
+  width: 160px;
+  height: 100px;
+  bottom: -10px;
+  left: -20px
+}
+
+.orn-f {
+  width: 170px;
+  height: 170px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.orn-g {
+  width: 130px;
+  height: 130px;
+  bottom: -20px;
+  left: 18%
+}
+
+.orn-h {
+  width: 140px;
+  height: 140px;
+  top: -25px;
+  right: 15%
+}
+
+/* heritage section ornaments */
+.heritage {
+  position: relative;
+  overflow: hidden
+}
+
+.her-shanyrak {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  top: 50%;
+  left: 50%;
+  animation: shanyrak-bg 80s linear infinite;
+  opacity: .05;
+  pointer-events: none
+}
+
+@keyframes shanyrak-bg {
+  from { transform: translate(-50%, -50%) rotate(0deg) }
+  to { transform: translate(-50%, -50%) rotate(360deg) }
+}
+
+.her-tumar-l {
+  position: absolute;
+  width: 70px;
+  height: 120px;
+  left: 5%;
+  top: 50%;
+  opacity: .18;
+  pointer-events: none;
+  animation: orn-pulsing 7s ease-in-out infinite
+}
+
+.her-tumar-r {
+  position: absolute;
+  width: 70px;
+  height: 120px;
+  right: 5%;
+  top: 50%;
+  opacity: .18;
+  pointer-events: none;
+  animation: orn-pulsing 7s ease-in-out infinite reverse
+}
+
+/* hero bottom-left bota koz */
+.hero-orn-bl {
+  position: absolute;
+  left: 2%;
+  bottom: 6%;
+  width: 220px;
+  height: 140px;
+  opacity: .07;
+  pointer-events: none
+}
+
+/* process section ornament */
+.proc-orn-r {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+  opacity: .08;
+  pointer-events: none;
+  animation: orn-pulsing 9s ease-in-out infinite
+}
+
+/* footer ornamental border */
+.foot-orn-border {
+  display: block;
+  width: 100%;
+  height: 30px;
+  opacity: .35
 }
 
 /* audience */
