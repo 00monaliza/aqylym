@@ -118,19 +118,19 @@ section {
 }
 
 .logo-img {
-  height: 64px;
+  height: 84px;
   width: auto;
-  opacity: .9;
-  filter: brightness(0) invert(1);
-  transition: opacity .3s ease;
+  opacity: 1;
+  filter: drop-shadow(0 0 1px rgba(255,255,255,1)) drop-shadow(0 0 6px rgba(255,255,255,.55)) brightness(1.08);
+  transition: filter .3s ease;
 }
 
 .logo-img:hover {
-  opacity: 1;
+  filter: drop-shadow(0 0 2px rgba(255,255,255,1)) drop-shadow(0 0 10px rgba(255,255,255,.7)) brightness(1.12);
 }
 
 .footer-logo {
-  height: 52px;
+  height: 68px;
 }
 
 /* buttons */
