@@ -300,7 +300,7 @@ section {
   align-items: center
 }
 
-.deadline-chip {
+/* .deadline-chip {
   margin-top: 26px;
   display: inline-flex;
   align-items: center;
@@ -311,14 +311,14 @@ section {
   padding: 12px 18px;
   font-size: 14px;
   color: var(--muted-onnavy)
-}
+} */
 
-.deadline-chip b {
+/* .deadline-chip b {
   font-family: var(--display);
   font-weight: 700;
   color: var(--gold);
   font-size: 18px
-}
+} */
 
 .hero-card {
   background: rgba(255, 255, 255, .06);

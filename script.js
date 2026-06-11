@@ -149,28 +149,28 @@ document.querySelectorAll(".rv").forEach(function (el) { io.observe(el); });
 })();
 
 /* Deadline countdown */
-(function () {
-  var now = new Date(), y = now.getFullYear();
-  var dls = [
-    { name: "UCAS (Великобритания)", date: new Date(y, 0, 14) },
-    { name: "Regular Decision (США)", date: new Date(y, 0, 15) },
-    { name: "uni-assist (Германия)", date: new Date(y, 6, 15) },
-    { name: "Early Decision (США)", date: new Date(y, 10, 1) },
-    { name: "UCAS (Великобритания)", date: new Date(y + 1, 0, 14) }
-  ];
-  var next = null;
-  for (var i = 0; i < dls.length; i++) { if (dls[i].date > now) { next = dls[i]; break; } }
-  if (!next) return;
-  var chip = document.getElementById("deadlineChip");
-  if (chip) { chip.hidden = false; document.getElementById("dlName").textContent = next.name; }
-  function upd() {
-    var diff = Math.max(0, next.date - new Date());
-    var d = Math.floor(diff / 864e5);
-    var dd = document.getElementById("dlDays");
-    if (dd) dd.textContent = d;
-  }
-  upd(); setInterval(upd, 60000);
-})();
+// (function () {
+//   var now = new Date(), y = now.getFullYear();
+//   var dls = [
+//     { name: "UCAS (Великобритания)", date: new Date(y, 0, 14) },
+//     { name: "Regular Decision (США)", date: new Date(y, 0, 15) },
+//     { name: "uni-assist (Германия)", date: new Date(y, 6, 15) },
+//     { name: "Early Decision (США)", date: new Date(y, 10, 1) },
+//     { name: "UCAS (Великобритания)", date: new Date(y + 1, 0, 14) }
+//   ];
+//   var next = null;
+//   for (var i = 0; i < dls.length; i++) { if (dls[i].date > now) { next = dls[i]; break; } }
+//   if (!next) return;
+//   var chip = document.getElementById("deadlineChip");
+//   if (chip) { chip.hidden = false; document.getElementById("dlName").textContent = next.name; }
+//   function upd() {
+//     var diff = Math.max(0, next.date - new Date());
+//     var d = Math.floor(diff / 864e5);
+//     var dd = document.getElementById("dlDays");
+//     if (dd) dd.textContent = d;
+//   }
+//   upd(); setInterval(upd, 60000);
+// })();
 
 /* Floating WA */
 (function () {
