@@ -118,9 +118,10 @@ section {
 }
 
 .logo-img {
-  height: 48px;
+  height: 64px;
   width: auto;
-  opacity: .75;
+  opacity: .9;
+  filter: brightness(0) invert(1);
   transition: opacity .3s ease;
 }
 
@@ -129,7 +130,7 @@ section {
 }
 
 .footer-logo {
-  height: 40px;
+  height: 52px;
 }
 
 /* buttons */
