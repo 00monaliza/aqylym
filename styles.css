@@ -118,7 +118,7 @@ section {
 }
 
 .logo-img {
-  height: 94px;
+  height: 115px;
   width: auto;
   opacity: 1;
   filter:
@@ -131,7 +131,7 @@ section {
 }
 
 .footer-logo {
-  height: 68px;
+  height: 85px;
 }
 
 /* buttons */
@@ -195,14 +195,14 @@ section {
   right: 0;
   z-index: 60;
   transition: background .25s ease, box-shadow .25s ease;
-  padding: 16px 0
+  padding: 6px 0
 }
 
 .nav.scrolled {
   background: rgba(17, 30, 69, .95);
   backdrop-filter: blur(14px);
   box-shadow: 0 6px 24px rgba(10, 16, 40, .25);
-  padding: 10px 0
+  padding: 2px 0
 }
 
 .nav .wrap {
